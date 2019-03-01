@@ -85,8 +85,8 @@ Default value : 3000
 
 ## Codepen demos links
 * NodeCursor for Tweenmax : [https://codepen.io/hmongouachon/pen/zbraLG]
-* NodeCursor for jQuery : [http://codepen.io/hmongouachon/pen/LZGwWY]
-* NodeCursor without dependencies : [http://codepen.io/hmongouachon/pen/LZGwWY]
+* NodeCursor for jQuery : [https://codepen.io/hmongouachon/pen/Ygwjrj]
+* NodeCursor without dependencies : [https://codepen.io/hmongouachon/pen/JzGBpM]
 
 
 
