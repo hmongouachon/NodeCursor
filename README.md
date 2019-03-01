@@ -1,10 +1,10 @@
 
 # NodeCursor
 
-NodeCursor is a tiny plugin to create custom cursor node animations built in 3 versions : 
+NodeCursor is a tiny js plugin to create custom cursor / node animations built in 3 versions : 
 - with jQuery dependency
 - with Tweenmax
-- agnostics dependencies
+- free dependencies
 
 ## Plugin installation
 - include nodeCursor.css
