@@ -1,0 +1,140 @@
+/* ----------------------------
+
+  cursor styles
+
+--------------------------- */
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    z-index: 10;
+    top : 0;
+    left : 0;
+    display: block;
+
+    /*styles applied for showing / hiding cursor - do not touch*/
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+    opacity: 0;
+
+    /*element width*/
+    width: 6px;
+    height: 6px;
+}
+
+.cursor.moving {
+    opacity: 1;
+}
+
+.cursor::before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+
+    /* transitions animations*/
+    opacity: 1;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
+/* expand is the class you assigned with the plugin to cursor when a selected element is hovered*/
+.cursor.expand::before {
+    opacity: 0;
+   
+
+}
+
+
+/* ----------------------------
+
+  node styles
+
+--------------------------- */
+
+.node {
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: block;
+
+    /*styles applied for showing / hiding cursor - do not touch*/
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    -o-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+    opacity: 0;
+    
+    /*element width*/
+    width: 32px;
+    height: 32px;
+
+}
+
+.node.moving {
+      opacity: 1;
+}
+
+.node::before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    border: 1px solid #ffffff;
+    /*states and transitions animations*/
+    transform: scale(1.5);
+    opacity: 1;
+    -webkit-transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+    -moz-transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+    -o-transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+    transition: opacity 300ms linear, transform 300ms linear, border 300ms linear, background-color 300ms linear;
+
+}
+
+/* expand is the class you assigned with the plugin to cursor when a selected element is hovered*/
+.node.expand::before {
+     transform: scale(3);
+    background-color: #ffffff;
+    opacity: 0.2;
+   
+
+}
+
+/*.node.reduce {
+    transform: scale(1);
+    background-color: #ffffff;
+}*/
+
+
+
+.hover__btn {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-decoration: none; 
+    outline: none;
+    text-transform: uppercase;
+    cursor : none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform : translate(-50%, -50%);
+    -webkit-transform : translate(-50%, -50%);
+    transform : translate(-50%, -50%);
+}

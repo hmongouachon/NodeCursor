@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NodeCursor demo</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,300' rel='stylesheet' type='text/css'>
+    <!-- Demo theme styles -->
+    <link href='css/theme.css' rel='stylesheet' type='text/css'>
+    <!-- Plugin styles -->
+    <link href='css/nodeCursor.css' rel='stylesheet' type='text/css'>
+</head>   
+<body>
+
+    <h1>NodeCursor - jQuery</h1>
+    <ul class="">
+        <li><a href="demo-tween.html" class="nodeHover">Demo Tween</a></li>
+        <li><a href="demo-jquery.html" class="nodeHover">Demo jQuery</a></li>
+        <li><a href="demo-agnostic.html" class="nodeHover">Demo Agnostic</a></li>
+    </ul>
+    
+    <!-- create cursor markups  -->
+    <div class="node" id="node"></div>
+    <div class="cursor" id="cursor"></div>
+
+    <a href="#" class="hover__btn nodeHover">Hover me</a>
+
+    <p>Find this project on <a href="#" title="Github">Github</a></p>
+
+    <!-- include jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>  
+
+    <!-- include plugin src -->
+    <script src="../src/nodecursor-jquery.js"></script>
+    
+    <!-- active plugin -->
+    <script>
+    $( function() {
+        // init plugin
+        NodeCursor({
+            cursor : true, // enable cursor
+            node : true, // enable node
+            cursor_velocity : 1, // cursor velocity : 1 = default w1 = slower, >1 = faster
+            node_velocity : 0.35, // cursor velocity : 1 = default w1 = slower, >1 = faster
+            native_cursor : 'none', // default,  grab, pointer ( all cursor's css properties)
+            element_to_hover : '.nodeHover', // // element that will trigger cursor anime on hover :  'disable', or any element : 'a', '.class', '#id' 
+            cursor_class_hover : 'disable', // 'disable', or any class name (without dot) - ex : expand, reduce relative to your css
+            node_class_hover : 'expand', // 'disable', or any class name  (without dot) - ex : expand, reduce relative to your css
+            hide_mode : true, // hide node and cursor if inactive
+            hide_timing : 2000, // hide timing if inactive 
+        });
+
+    });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

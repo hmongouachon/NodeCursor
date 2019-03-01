@@ -1,5 +1,5 @@
 /*!
- * NodeCursor : a tiny plugin to create custom cursor
+ * NodeCursor : a tiny plugin to create custom cursor node animations
  * (c) 2019 Hadrien Mongouachon
  * MIT Licensed.
  *
@@ -33,7 +33,7 @@
       options.hasOwnProperty('native_cursor') ? options.native_cursor : 'default';
       options.hasOwnProperty('element_to_hover') ? options.element_to_hover : 'disable';
       options.hasOwnProperty('cursor_class_hover') ? options.cursor_class_hover : 'disable';
-      options.hasOwnProperty('node_class_hover') ? options.node_class_hover : '.expand';
+      options.hasOwnProperty('node_class_hover') ? options.node_class_hover : 'disable';
       options.hasOwnProperty('hide_mode') ? options.hide_mode : true;
       options.hasOwnProperty('hide_timing') ? options.hide_timing : 3000;
 

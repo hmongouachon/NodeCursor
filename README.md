@@ -1,18 +1,55 @@
 
-## Plugin description
+# NodeCursor
 
-This plugin will clone the selected element (html or image) 3 times :
-   - first element become a static background
-   - next element with glitch property and lower interval
-   - next element with glitch property, higher interval and scale options
-   - next element with glitch property, higher interval, scale options and blend mode apply 
+NodeCursor is a tiny plugin to create custom cursor node animations built in 3 versions : 
+- with jQuery dependency
+- with Tweenmax
+- agnostics dependencies
 
-## Configuration
-- Set the element you want to glitch with absolute position
-- Include jquery library
-- Instantiate plugin ( check the demo below for example )
+## Plugin installation
+- include nodeCursor.css
+- build cursor and node html markups with id="node" or id="cursor"
+<code>
+    <div class="node" id="node"></div>
+    <div class="cursor" id="cursor"></div>
+</code>
+- include dependency (based on wich version you want to use)
+- include nodecursor-version you use.js 
+- init plugin
+
+## Plugin parameters
+- [cursor] : boolean 
+> Enable or disable cursor - Default value : true
+
+- [node] : boolean [enable node]
+> Enable or disable node - Default value : true
+
+- [cursor_velocity] : number
+> Set cursor velocity : slow < 1 > fast - Default value : 1 except for tween version : default value  = 0, > 0 = slower;
+
+- [node_velocity] : number
+> Set node velocity : slow < 1 > fast - Default value : 1 except for tween version : default value  = 0, > 0 = slower;
+
+- [native_cursor] : string
+> Set body's cursor css property : [default,  grab, pointer ( all cursor's css properties)]
+
+- [element_to_hover] : string
+> element that will trigger cursor anime on hover : any css selector : 'a', '.class', '#id' - Default value : 'disable' 
+
+- [cursor_class_hover] : string
+> Any class name (without dot) - ex : expand, reduce relative to your css - Default value : 'disable'
+
+- [node_class_hover] : string
+> Any class name (without dot) - ex : expand, reduce relative to your css - Default value : 'expand'
+
+- [hide_mode] : boolean
+> hide node and cursor if mouse stop moving - Default value : true
+
+- [hide_timing] : number 
+> delay before hiding - Default value : 3000
+
 
 View the demo of this project on [codepen](http://codepen.io/hmongouachon/pen/LZGwWY)
 
-# NodeCursor
+
 
