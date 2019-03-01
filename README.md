@@ -9,10 +9,6 @@ NodeCursor is a tiny plugin to create custom cursor node animations built in 3 v
 ## Plugin installation
 - include nodeCursor.css
 - build cursor and node html markups with id="node" or id="cursor"
-<code>
-    <div class="node" id="node"></div>
-    <div class="cursor" id="cursor"></div>
-</code>
 - include dependency (based on wich version you want to use)
 - include nodecursor-version you use.js 
 - init plugin
