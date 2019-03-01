@@ -192,7 +192,7 @@
 
                 }
             }
-
+ 
             request = requestAnimationFrame(that.render);
 
         };
