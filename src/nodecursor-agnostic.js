@@ -104,12 +104,12 @@
                 playing = true;
                 options.hide_mode === true ? hide_cursor() : void 0;
 
-                if (settings.cursor === true) {
+                if (options.cursor === true) {
                     cursor_xp += ((clientX - cursor_width) - cursor_xp) * options.cursor_velocity;
                     cursor_yp += ((clientY - cursor_height) - cursor_yp) * options.cursor_velocity;
                 }
 
-                if (settings.node === true) {
+                if (options.node === true) {
                     node_xp += ((clientX - node_width) - node_xp) * options.node_velocity;
                     node_yp += ((clientY - node_height) - node_yp) * options.node_velocity;
                 }

@@ -37,47 +37,55 @@ Enable or disable node - Default value : true
 
 ```
 [cursor_velocity] : number
-Set cursor velocity : slow < 1 > fast - Default value : 1 except for tween version : default value  = 0, > 0 = slower;
+Set cursor velocity : slow < 1 > fast
+Default value : 1 except for tween version : default value  = 0, > 0 = slower;
 ```
 
 ```
 [node_velocity] : number
-Set node velocity : slow < 1 > fast - Default value : 1 except for tween version : default value  = 0, > 0 = slower;
+Set node velocity : slow < 1 > fast
+Default value : 1 except for tween version : default value  = 0, > 0 = slower;
 ```
 
 ```
 [native_cursor] : string
 Set body's cursor css property : 'default',  'grab', 'pointer' ( all cursor's css properties)
+Default value : 'none'
 ```
 
 ```
 [element_to_hover] : string
-element that will trigger cursor anime on hover : any css selector : 'a', '.class', '#id' - Default value : 'disable' 
+element that will trigger cursor anime on hover : any css selector : 'a', '.class', '#id' 
+Default value : 'disable' 
 ```
 
 ```
 [cursor_class_hover] : string
-Any class name (without dot) - ex : expand, reduce relative to your css - Default value : 'disable'
+Any class name (without dot) - ex : expand, reduce relative to your css 
+Default value : 'disable'
 ```
 
 ```
 [node_class_hover] : string
-Any class name (without dot) - ex : expand, reduce relative to your css - Default value : 'expand'
+Any class name (without dot) - ex : expand, reduce relative to your css 
+Default value : 'expand'
 ```
 
 ```
 [hide_mode] : boolean
-hide node and cursor if mouse stop moving - Default value : true
+hide node and cursor if mouse stop moving 
+Default value : true
 ```
 
 ```
 [hide_timing] : number 
-delay before hiding - Default value : 3000
+delay before hiding 
+Default value : 3000
 ```
 
 ## Codepen demos links
-* NodeCursor with Tweenmax : [http://codepen.io/hmongouachon/pen/LZGwWY]
-* NodeCursor with jQuery : [http://codepen.io/hmongouachon/pen/LZGwWY]
+* NodeCursor for Tweenmax : [https://codepen.io/hmongouachon/pen/zbraLG]
+* NodeCursor for jQuery : [http://codepen.io/hmongouachon/pen/LZGwWY]
 * NodeCursor without dependencies : [http://codepen.io/hmongouachon/pen/LZGwWY]
 
 
