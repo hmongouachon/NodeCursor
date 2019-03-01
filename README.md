@@ -17,7 +17,7 @@ NodeCursor is a tiny plugin to create custom cursor node animations built in 3 v
 - [cursor] : boolean 
 > Enable or disable cursor - Default value : true
 
-- [node] : boolean [enable node]
+- [node] : boolean 
 > Enable or disable node - Default value : true
 
 - [cursor_velocity] : number
@@ -27,7 +27,7 @@ NodeCursor is a tiny plugin to create custom cursor node animations built in 3 v
 > Set node velocity : slow < 1 > fast - Default value : 1 except for tween version : default value  = 0, > 0 = slower;
 
 - [native_cursor] : string
-> Set body's cursor css property : [default,  grab, pointer ( all cursor's css properties)]
+> Set body's cursor css property : 'default',  'grab', 'pointer' ( all cursor's css properties)
 
 - [element_to_hover] : string
 > element that will trigger cursor anime on hover : any css selector : 'a', '.class', '#id' - Default value : 'disable' 
