@@ -1,5 +1,5 @@
 /*!
- * NodeCursor : a tiny plugin to create custom cursor node animations - Tweenmax version
+ * NodeCursor :  a tiny javascript plugin to create custom cursor animations - Tweenmax version
  * (c) 2019 Hadrien Mongouachon
  * MIT Licensed.
  *

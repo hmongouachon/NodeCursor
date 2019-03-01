@@ -1,5 +1,5 @@
 /*!
- * NodeCursor : a tiny plugin to create custom cursor node animations - Free dependencies version
+ * NodeCursor :  a tiny javascript plugin to create custom cursor animations - Free dependencies version
  * (c) 2019 Hadrien Mongouachon
  * MIT Licensed.
  *
