@@ -1,3 +1,4 @@
+
 ## Plugin description
 
 This plugin will clone the selected element (html or image) 3 times :
@@ -12,4 +13,6 @@ This plugin will clone the selected element (html or image) 3 times :
 - Instantiate plugin ( check the demo below for example )
 
 View the demo of this project on [codepen](http://codepen.io/hmongouachon/pen/LZGwWY)
+
+# NodeCursor
 
