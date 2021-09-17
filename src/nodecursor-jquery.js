@@ -107,13 +107,13 @@
 
             if (settings.cursor === true) {
                 // get the mouse position minus 3px to center the circle
-                cursor_mouseX = e.pageX - cursor_width;
-                cursor_mouseY = e.pageY - cursor_height;
+                cursor_mouseX = e.clientX - cursor_width;
+                cursor_mouseY = e.clientY - cursor_height;
             }
             if (settings.node === true) {
                 // get the mouse position minus 6px to center the node
-                node_mouseX = e.pageX - node_width;
-                node_mouseY = e.pageY - node_height;
+                node_mouseX = e.clientX - node_width;
+                node_mouseY = e.clientY - node_height;
             }
 
             if (settings.hide_mode === true) {
