@@ -176,8 +176,12 @@
 
             // if element hover class is not disable
             if (settings.element_to_hover !== 'disable') {
+                let hoverable = [];
+                settings.element_to_hover.split(",").forEach((toHover) => {
+                    hoverable.push(toHover.trim()+':hover');
+                });
 
-                if ($(settings.element_to_hover + ':hover').length != 0) {
+                if ($(hoverable.join(",")).length != 0) {
                     if (settings.cursor === true) {
                         // if cursor hovering has class
                         if (settings.cursor_class_hover !== 'disable') {
