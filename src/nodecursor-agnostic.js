@@ -9,11 +9,11 @@
  * Version: 1.0.0
  */
 ;
-(function() {
+(function () {
 
     let options;
 
-    window.NodeCursor = function(options) {
+    window.NodeCursor = function (options) {
 
         /////////////////////////////
 
@@ -55,6 +55,10 @@
         let timer;
         let request;
 
+        var cursor_mouseX = 0;
+        var cursor_mouseY = 0;
+        var node_mouseX = 0;
+        var node_mouseY = 0;
         let cursor_xp = 0;
         let cursor_yp = 0;
         let node_xp = 0;
@@ -105,14 +109,19 @@
                 options.hide_mode === true ? hide_cursor() : void 0;
 
                 if (options.cursor === true) {
-                    cursor_xp += ((clientX - cursor_width) - cursor_xp) * options.cursor_velocity;
-                    cursor_yp += ((clientY - cursor_height) - cursor_yp) * options.cursor_velocity;
+
+
+                    cursor_mouseX = clientX - cursor_width;
+                    cursor_mouseY = clientY - cursor_height;
                 }
 
                 if (options.node === true) {
-                    node_xp += ((clientX - node_width) - node_xp) * options.node_velocity;
-                    node_yp += ((clientY - node_height) - node_yp) * options.node_velocity;
+
+
+                    node_mouseX = clientX - node_width;
+                    node_mouseY = clientY - node_height;
                 }
+
 
                 function hide_cursor() {
                     clearTimeout(timer);
@@ -154,18 +163,24 @@
                 // cancelAnimationFrame(request);
             }
 
+
+
+
             // if cursor enable
             if (options.cursor === true) {
+                cursor_xp += ((cursor_mouseX - cursor_xp) * options.cursor_velocity);
+                cursor_yp += ((cursor_mouseY - cursor_yp) * options.cursor_velocity);
                 // animate
                 innerCursor.style.transform = 'translate3d(' + cursor_xp + 'px,' + cursor_yp + 'px, 0)';
             }
 
             //  if node enable
             if (options.node === true) {
+                node_xp += ((node_mouseX - node_xp) * options.node_velocity);
+                node_yp += ((node_mouseY - node_yp) * options.node_velocity);
                 // animate
                 innerNode.style.transform = 'translate3d(' + node_xp + 'px,' + node_yp + 'px, 0)';
             }
-
 
 
             // if hovering is not disable = element class is set
@@ -176,7 +191,7 @@
                 // node effect on hover
                 if (options.node_class_hover !== 'disable') {
 
-                    nodes.forEach(function(node, index) {
+                    nodes.forEach(function (node, index) {
                         // on mouse over set custom class
                         node.addEventListener('mouseover', function hover() {
                             options.cursor === true ? innerCursor.classList.add(options.cursor_class_hover) : void 0;
@@ -192,7 +207,7 @@
 
                 }
             }
- 
+
             request = requestAnimationFrame(that.render);
 
         };
@@ -206,7 +221,7 @@
 
         /////////////////////////////  
 
-        this.init = function() {
+        this.init = function () {
 
             that.initCursor();
 
